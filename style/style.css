@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px;
+}
+
+.item {
+    float: left;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.link, .item-drop a {
+    background-color: forestgreen;
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.item-drop a:hover {
+    background-color: aquamarine;
+    color: forestgreen;
+}
+
+.list-drop {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.item-drop a {
+    width: 100px;
+}
+
+.item:hover .link {
+    background-color: aquamarine;
+    color: forestgreen;
+}
+
+.item:hover .list-drop {
+    display: block;
+}
+
+.list-second-drop {
+    display: none;
+}
+
+.item-drop:hover .list-second-drop {
+    display: block;
+}
+
+.item-drop {
+    position: relative;
+}
+
+.list-second-drop {
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
